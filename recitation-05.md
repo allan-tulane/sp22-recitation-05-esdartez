@@ -44,7 +44,8 @@ We can use `scan` to create the needed list. You may need to adjust slightly the
 3. Finally, we'll use this positions array to construct the final output. First, we'll create the output list ($n$ elements). Then, we will loop through the original input array once again. For each value, we'll look up in the `positions` array where the value should go. E.g., for the first value 2, we look up `positions[2]`, which tells us the 2 should go in index 5 in the output. To update `counts` for future iterations, we will then increment `counts` by one for the value we just read. E.g., `positions[2]` will increment from 5 to 6; the next 2 we read will be placed in index 6.
 
 Implement `construct_output` with a simple for loop and test with `test_construct_output`.
-
+w(n) contains O(k)
+S(n) contains S(log k)
 .  
 .  
 . 
